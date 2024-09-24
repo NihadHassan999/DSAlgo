@@ -34,7 +34,7 @@ Output: true
 #         self.right = right
 
 class Solution:
-    def isBalanced(self, root: Optional[TreeNode]) -> bool:
+    def isBalanced(self, root: TreeNode) -> bool:
 
         def dfs(root):
             if not root: return [True, 0]
