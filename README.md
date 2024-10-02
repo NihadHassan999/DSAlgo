@@ -1,5 +1,7 @@
 # Index
 
+Basic syntax usage guide for top data structures.
+
 [1. Arrays and Hashing](#1-arrays-and-hashing)<br>
 [2. Two Pointers](#2-two-pointers)<br>
 [3. Sliding Window](#3-sliding-window)<br>
