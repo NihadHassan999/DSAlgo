@@ -31,7 +31,7 @@ Output: [2,10,4,8,6]
 '''
 
 #Definition for singly-linked list.
- class ListNode:
+class ListNode:
      def __init__(self, val=0, next=None):
          self.val = val
          self.next = next
