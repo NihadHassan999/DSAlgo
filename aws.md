@@ -1,0 +1,8 @@
+- 3 principles of cloud - compute, storage, and data transfer OUT of the cloud
+- FM model is not task specific, its trained on multiple datasets for a variety of downstream tasks
+- improve transcription accuracy - custom language model in Amazon Transcribe
+- capacity availability not a point of consideration when choosing an AWS region
+- increasing the temperature will make the answers less predictable and more creative
+- Determinism is not a thing of generative ai
+- interpretability for a model - a model that provides transparency into a system so a human can explain the model's output
+- HCD for amplified - prevent mistakes in stressful environment
