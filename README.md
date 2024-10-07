@@ -49,6 +49,16 @@ for num in arr:  # O(n)
 # Iteration over a hash table
 for key, value in hash_table.items():  # O(n)
     print(key, value)
+
+# Recursion over an array
+def traverse_array(arr, index=0):
+    if index == len(arr):  # Base case: end of array
+        return
+    print(arr[index])  # Process the current element
+    traverse_array(arr, index + 1)  # Recursive call for the next element
+
+arr = [1, 2, 3, 4, 5]
+traverse_array(arr)  # Output will be 1 2 3 4 5
 ```
 
 **Time and Space Complexity:**
