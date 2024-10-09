@@ -28,12 +28,30 @@ Constraints:
 '''
 
 '''
-create result
-create separate loops for prefix and postfix
-prefix enters first res value, then the present input value is multiplied with prefix
-postfix enters last res value, then the present input value is multiplied with postfix
+1) create result
+2) create separate loops for prefix and postfix
+3) prefix enters first res value, then the present input value is multiplied with prefix
+4) postfix enters last res value, then the present input value is multiplied with postfix
 '''
 
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
-        
+        res = [1] * len(nums)
+
+        prefix = 1
+        for i in range(len(nums)):
+            res[i] *= prefix # multiply prefix to res index
+            prefix *= nums[i] # update prefix with current num index
+
+        postfix = 1
+        for i in range(len(nums) - 1, -1,-1): # iterate in reverse order  
+            res[i] *= postfix # multiply prefix to res index
+            postfix *= nums[i] # update prefix with current num index
+
+        return res
+
+'''
+Time Complexity : O(n) 
+Space Complexity : O(1) -> no data structures are being used apart from 'res',
+                           which is not considered as extra space as mentioned in the question
+'''
