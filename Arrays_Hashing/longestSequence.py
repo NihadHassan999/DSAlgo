@@ -47,3 +47,9 @@ class Solution:
 Time Complexity : O(n)
 Space Complexity : O(n)
 '''
+
+# Example Usage
+solution = Solution()
+nums = [100, 4, 200, 1, 3, 2]
+result = solution.longestConsecutive(nums)
+print(f"The longest consecutive sequence length is: {result}")
