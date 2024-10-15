@@ -34,3 +34,40 @@ Constraints:
 -10^5 <= nums[i] <= 10^5
 '''
 
+# 1) sort the input list, iterate through and find the first element (postitive element not allowed, duplication of first element not allowed)
+# 2) then its a two sum : initialise pointers -> find threesum -> increment according to condition
+# 3) else return the result and increment the pointers for next loop (ensure not duplicate)
+
+class Solution:
+    def threeSum(self, nums: list[int]) -> list[list[int]]:
+        res = []
+        nums.sort()
+
+        for i, a in enumerate(nums):
+            if a > 0:
+                break
+            if i > 0 and a == nums[i - 1]:
+                continue
+            l, r = i + 1, len(nums) - 1
+            while l < r:
+                threeSum = a + nums[l] + nums[r]
+                if threeSum > 0:
+                    r -= 1
+                elif threeSum < 0:
+                    l += 1
+                else:
+                    res.append([a, nums[l], nums[r]])
+                    l += 1
+                    r -= 1
+                    while l < r and nums[l] == nums[l - 1]:
+                        l += 1
+        return res
+        
+
+'''
+Time Complexity : O(n2)
+Space Complexity : O(1) or O(n) -> sorting takes space in certain libraries,
+                                    two pointers do not take space
+'''
+            
+        
