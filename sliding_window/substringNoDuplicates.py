@@ -39,7 +39,7 @@ s consists of English letters, digits, symbols and spaces.
 -> initialize empty set and res
 -> define two pointers for sliding window, 0 and 1
 -> if second pointer value in set, remove the first pointer value, increment it and add the new one
--> 
+-> update result with max length (r - l + 1(to length of substring while handling zero-indexing))
 '''
 
 class Solution:
@@ -55,3 +55,8 @@ class Solution:
             charSet.add(s[r])
             res = max(res, r - l + 1)
         return res
+    
+'''
+Time complexity : O(n)
+Space complexity : O(k)
+'''
