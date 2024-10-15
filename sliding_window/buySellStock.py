@@ -30,7 +30,7 @@ Constraints:
 -> create empty maxp and pointer values should point to 0 and 1 index
 -> through length of list, if current buy price<next price, then obtain maxP 
 -> else, next price becomes current buy price
--> finally finish the loop by incrementing for next iteration
+-> finally finish the loop by incrementing for next iteration -
 '''
 
 class Solution:
