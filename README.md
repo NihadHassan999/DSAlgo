@@ -1,6 +1,6 @@
 # Index
 
-Basic syntax usage guide for top data structures.
+Basic syntax usage guide for top data structures (1-8), plus other important stuff.
 
 [1. Arrays and Hashing](#1-arrays-and-hashing)<br>
 [2. Two Pointers](#2-two-pointers)<br>
@@ -10,6 +10,7 @@ Basic syntax usage guide for top data structures.
 [6. Linked List](#6-linked-list)<br>
 [7. Trees](#7-trees)<br>
 [8. Graphs](#8-graphs)<br>
+[9. String Iteration methods](#9-string-iteration-methods)<br>
 
 ______________________
 ______________________
@@ -406,3 +407,17 @@ def bfs(graph, start):
   - Traversal: O(V + E) where V is vertices and E is edges
 - **Space Complexity:** O(V)
 
+______________________
+______________________
+# 9. String Iteration methods
+______________________
+______________________
+
+- **for r in range(len(s)):** When you need indices to manipulate the string (e.g., sliding window, two-pointer technique).
+- **for r in s:** When you only care about characters, not their positions.
+- **for i, r in enumerate(s):** When you need both index and character in the loop.
+- **for r, c in zip(range(len(s)), s):** Similar to enumerate(), but useful when pairing with another sequence.
+- **for r in reversed(range(len(s))):** When you need to iterate backward by index.
+- **for r in reversed(s):** When you want to iterate backward over the characters.
+- **for r in range(len(s) - 1, -1, -1):** When you need a custom reverse loop with full control over steps and boundaries.
+- **List comprehension with enumerate():** When you want a compact and readable way to collect results into a list.
