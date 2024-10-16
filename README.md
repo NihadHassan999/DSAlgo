@@ -11,6 +11,7 @@ Basic syntax usage guide for top data structures (1-8), plus other important stu
 [7. Trees](#7-trees)<br>
 [8. Graphs](#8-graphs)<br>
 [9. String Iteration methods](#9-string-iteration-methods)<br>
+[10. Count characters in string - 2 methods](#10-count-characters-in-string---2-methods)
 
 ______________________
 ______________________
@@ -423,3 +424,27 @@ ______________________
 - **for r in reversed(s):** When you want to iterate backward over the characters.
 - **for r in range(len(s) - 1, -1, -1):** When you need a custom reverse loop with full control over steps and boundaries.
 - **List comprehension with enumerate():** When you want a compact and readable way to collect results into a list.
+
+
+______________________
+______________________
+# 10. Count characters in string - 2 methods
+______________________
+______________________
+
+## Using List
+```python
+def count_characters_list(s):
+    count = [0] * 26  # List for 26 letters
+    for char in s:
+        count[ord(char) - ord('a')] += 1
+    return count
+```
+## Using Hashmap
+```python
+def count_characters_hashmap(s):
+    count = {}
+    for char in s:
+        count[char] = 1 + count.get(char, 0)
+    return count
+```
