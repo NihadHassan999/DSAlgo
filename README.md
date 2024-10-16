@@ -136,6 +136,8 @@ for start in range(len(arr) - window_size + 1):
 - **Time Complexity:** O(n)
 - **Space Complexity:** O(1) for fixed-size windows, O(k) for variable-size (where k is the size of the current window)
 
+- So in general for any <b>substring s1</b> in a <b>given string s2</b>, the total number of windows for the same would be <b>len(s2) - len(s1) + 1</b>
+
 ______________________
 ______________________
 # 4. Stack
