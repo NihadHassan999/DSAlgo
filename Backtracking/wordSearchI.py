@@ -79,7 +79,7 @@ class Solution:
         return False  
 
 '''
-Time Complexity : O(ROWS x COLS x 4^L)
+Time Complexity : O(ROWS x COLS x 4^L) where 4 indicates the 4 directions
 Space Complexity : O(L)
 '''        
           
