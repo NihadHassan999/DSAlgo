@@ -12,6 +12,7 @@ Basic syntax usage guide for top data structures (1-8), plus other important stu
 [8. Graphs](#8-graphs)<br>
 [9. String Iteration methods](#9-string-iteration-methods)<br>
 [10. Count characters in string - 2 methods](#10-count-characters-in-string---2-methods)
+[11. Numpy 50 exercises](#11-Numpy-50-exercises)
 
 ______________________
 ______________________
@@ -71,6 +72,8 @@ traverse_array(arr)  # Output will be 1 2 3 4 5
   - Deletion: O(n) for arrays, O(1) for hash tables
 - **Space Complexity:** O(n) for arrays and hash tables
 
+[Go to Top](#top)
+
 ______________________
 ______________________
 # 2. Two Pointers
@@ -103,6 +106,7 @@ for i in range(len(arr)):
 - **Time Complexity:** O(n)
 - **Space Complexity:** O(1)
 
+[Go to Top](#top)
 ______________________
 ______________________
 # 3. Sliding Window
@@ -139,6 +143,8 @@ for start in range(len(arr) - window_size + 1):
 
 - So in general for any <b>substring s1</b> in a <b>given string s2</b>, the total number of windows for the same would be <b>len(s2) - len(s1) + 1</b>
 
+[Go to Top](#top)
+
 ______________________
 ______________________
 # 4. Stack
@@ -174,6 +180,7 @@ for item in stack:  # O(n)
 - **Time Complexity:** O(1) for push, pop, and peek
 - **Space Complexity:** O(n)
 
+[Go to Top](#top)
 ______________________
 ______________________
 # 5. Binary Search
@@ -209,6 +216,7 @@ return -1
 - **Time Complexity:** O(log n)
 - **Space Complexity:** O(1) for iterative; O(log n) for recursive (due to call stack)
 
+[Go to Top](#top)
 ______________________
 ______________________
 # 6. Linked List
@@ -266,6 +274,8 @@ while current:
   - Insertion: O(1) (at head), O(n) (at other positions)
   - Deletion: O(n)
 - **Space Complexity:** O(n)
+
+[Go to Top](#top)
 
 ______________________
 ______________________
@@ -347,6 +357,8 @@ def in_order(root):
   - Traversal: O(n)
 - **Space Complexity:** O(h) for recursive traversal, O(n) for non-recursive
 
+[Go to Top](#top)
+
 ______________________
 ______________________
 # 8. Graphs
@@ -410,6 +422,8 @@ def bfs(graph, start):
   - Traversal: O(V + E) where V is vertices and E is edges
 - **Space Complexity:** O(V)
 
+[Go to Top](#top)
+
 ______________________
 ______________________
 # 9. String Iteration methods
@@ -425,7 +439,7 @@ ______________________
 - **for r in range(len(s) - 1, -1, -1):** When you need a custom reverse loop with full control over steps and boundaries.
 - **List comprehension with enumerate():** When you want a compact and readable way to collect results into a list.
 
-
+[Go to Top](#top)
 ______________________
 ______________________
 # 10. Count characters in string - 2 methods
@@ -448,3 +462,12 @@ def count_characters_hashmap(s):
         count[char] = 1 + count.get(char, 0)
     return count
 ```
+
+[Go to Top](#top)
+______________________
+______________________
+# 10. Numpy 50 exercises
+______________________
+______________________
+
+[Numpy 50 exercises - Kaggle](https://www.kaggle.com/code/themlphdstudent/learn-numpy-numpy-50-exercises-and-solution/notebook)
